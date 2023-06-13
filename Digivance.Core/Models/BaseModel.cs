@@ -16,9 +16,9 @@
         public int Id { get; set; }
 
         /// <inheritdoc />
-        public int ModifiedById { get; set; }
+        public int? ModifiedById { get; set; }
 
         /// <inheritdoc />
-        public int ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
     }
 }

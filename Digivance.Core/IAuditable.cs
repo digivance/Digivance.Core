@@ -23,11 +23,11 @@
         /// <summary>
         /// Unique id of the user who last modified this record
         /// </summary>
-        public int ModifiedById { get; set; }
+        public int? ModifiedById { get; set; }
 
         /// <summary>
         /// UTC Date time when this record was last modified
         /// </summary>
-        public int ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
     }
 }
