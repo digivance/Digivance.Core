@@ -39,5 +39,25 @@ namespace Digivance.Core.Tests
         {
             Assert.That(value.IsEmailAddress(), Is.EqualTo(result));
         }
+
+        [Test]
+        [TestCase("Hello123", true)]
+        [TestCase("HELLO", true)]
+        [TestCase("123", false)]
+        [TestCase("", false)]
+        public void ContainsUpper(string value, bool result)
+        {
+            Assert.That(value.ContainsUpper(), Is.EqualTo(result));
+        }
+
+        [Test]
+        [TestCase("Hello123", true)]
+        [TestCase("hello", true)]
+        [TestCase("123", false)]
+        [TestCase("", false)]
+        public void ContainsLower(string value, bool result)
+        {
+            Assert.That(value.ContainsLower(), Is.EqualTo(result));
+        }
     }
 }
