@@ -23,6 +23,20 @@ namespace Digivance.Core
         public static bool ContainsSymbol(this string value) => value.Any(x => "~`!@#$%^&*()_+=-\\][{}|';:\"/.,<>?".Contains(x));
 
         /// <summary>
+        /// Tells us if the provided string contains Uppercase character
+        /// </summary>
+        /// <param name="value">The string we are evaluating</param>
+        /// <returns>True if one or more characters are uppercase</returns>
+        public static bool ContainsUpper(this string value) => value.Any(char.IsUpper);
+
+        /// <summary>
+        /// Tells us if the provided string contains Lowercase character
+        /// </summary>
+        /// <param name="value">The string we are evaluating</param>
+        /// <returns>True if one or more characters are lowercase</returns>
+        public static bool ContainsLower(this string value) => value.Any(char.IsLower);
+
+        /// <summary>
         /// A helper that validates the provided string as an email address by 
         /// attempting to construct a MailAddress object from it
         /// </summary>
