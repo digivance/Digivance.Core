@@ -1,5 +1,4 @@
-﻿using Digivance.Core.Models;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Digivance.Core.Tests
 {
